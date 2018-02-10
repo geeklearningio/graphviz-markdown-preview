@@ -1,4 +1,4 @@
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/geeklearningio.graphviz-markdown-preview.svg)]()
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/geeklearningio.graphviz-markdown-preview.svg)](https://marketplace.visualstudio.com/items?itemName=geeklearningio.graphviz-markdown-preview)
 
 Adds [GraphViz](http://www.graphviz.org/) support to VS Code's builtin markdown preview
 
