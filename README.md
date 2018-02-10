@@ -6,7 +6,7 @@ Adds [GraphViz](http://www.graphviz.org/) support to VS Code's builtin markdown 
 
 
 # Usage
-Create diagrams in markdown using `mermaid` code blocks:
+Create diagrams in markdown using `graphviz` code blocks:
 
 ~~~markdown
 ```graphviz
