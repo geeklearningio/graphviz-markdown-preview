@@ -23,7 +23,8 @@ export function activate(context: vscode.ExtensionContext) {
 
                     var svg = Viz(code);
 
-                    return `<div class="graphviz">${svg}</div>`;
+                    //return `<div class="graphviz">${svg}</div>`;
+                    return `<div class="graphviz">${code}</div>`;
                 }
 
                 return highlight(code, lang);
