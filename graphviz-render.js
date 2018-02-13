@@ -1,10 +1,21 @@
 function contentLoaded() {
     var graphvizElements = document.getElementsByClassName('graphviz');
 
+    var changes = [];
+
     for (let index = 0; index < graphvizElements.length; index++) {
-        const element = graphvizElements.item(index);
+        var element = graphvizElements.item(index);
         var source = element.textContent;
-        element.parentElement.parentElement.outerHTML = Viz(source);
+
+        changes.push({
+            placeholder: element.parentElement.parentElement,
+            svg: Viz(source)
+        });
+    }
+
+    for (let index = 0; index < changes.length; index++) {
+        const element = changes[index];
+        element.placeholder.outerHTML = element.svg;
     }
 
     // use to debug rendered code.
