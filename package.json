@@ -21,6 +21,7 @@
         ],
         "markdown.previewScripts": [
             "./node_modules/viz.js/viz.js",
+            "./node_modules/viz.js/full.render.js",
             "./graphviz-render.js"
         ],
         "markdown.markdownItPlugins": true
@@ -39,7 +40,7 @@
         "vscode": "^1.1.6"
     },
     "dependencies": {
-        "viz.js": "^1.8.0"
+        "viz.js": "^2.0.0"
     },
     "repository": {
         "type": "git",

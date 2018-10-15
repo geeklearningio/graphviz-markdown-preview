@@ -1677,9 +1677,9 @@ vinyl@~2.0.1:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-viz.js@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/viz.js/-/viz.js-1.8.0.tgz#e0cb5ad241368e35b1a6e960691eba454c24951f"
+viz.js@^2.0.0:
+  version "2.0.0"
+  resolved "https://lucsan.pkgs.visualstudio.com/_packaging/node-feed/npm/registry/viz.js/-/viz.js-2.0.0.tgz#d34aa8e68f3b4eb7107f16ea6d1530a77109f315"
 
 vscode@^1.1.6:
   version "1.1.10"

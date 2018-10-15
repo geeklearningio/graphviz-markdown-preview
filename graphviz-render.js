@@ -1,4 +1,5 @@
 function contentLoaded() {
+    var viz = new Viz();
     var graphvizElements = document.getElementsByClassName('graphviz');
 
     var changes = [];
@@ -9,13 +10,15 @@ function contentLoaded() {
 
         changes.push({
             placeholder: element.parentElement.parentElement,
-            svg: Viz(source)
+            svg: viz.renderString(source, {engine: 'dot', format:'svg'})
         });
     }
 
     for (let index = 0; index < changes.length; index++) {
-        const element = changes[index];
-        element.placeholder.outerHTML = element.svg;
+        const change = changes[index];
+        change.svg.then(svg=> {
+            change.placeholder.outerHTML = svg;
+        });
     }
 
     // use to debug rendered code.
