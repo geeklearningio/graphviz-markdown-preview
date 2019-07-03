@@ -2,7 +2,7 @@
   "name": "graphviz-markdown-preview",
   "displayName": "Graphviz Markdown Preview",
   "description": "Adds Graphviz support to VSCode's builtin markdown preview",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "publisher": "geeklearningio",
   "engines": {
     "vscode": "^1.20.0"
