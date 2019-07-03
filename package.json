@@ -1,49 +1,50 @@
 {
-    "name": "graphviz-markdown-preview",
-    "displayName": "Graphviz Markdown Preview",
-    "description": "Adds Graphviz support to VSCode's builtin markdown preview",
-    "version": "0.0.6",
-    "publisher": "geeklearningio",
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "preview": true,
-    "categories": [
-        "Other"
+  "name": "graphviz-markdown-preview",
+  "displayName": "Graphviz Markdown Preview",
+  "description": "Adds Graphviz support to VSCode's builtin markdown preview",
+  "version": "0.0.6",
+  "publisher": "geeklearningio",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "preview": true,
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "markdown.previewStyles": [
+      "./graphviz.css"
     ],
-    "activationEvents": [
-        "onCommand:extension.sayHello"
+    "markdown.previewScripts": [
+      "./node_modules/viz.js/viz.js",
+      "./node_modules/viz.js/full.render.js",
+      "./graphviz-render.js"
     ],
-    "main": "./out/extension",
-    "contributes": {
-        "markdown.previewStyles": [
-            "./graphviz.css"
-        ],
-        "markdown.previewScripts": [
-            "./node_modules/viz.js/viz.js",
-            "./graphviz-render.js"
-        ],
-        "markdown.markdownItPlugins": true
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.0.43",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6"
-    },
-    "dependencies": {
-        "viz.js": "^1.8.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/geeklearningio/graphviz-markdown-preview.git"
-    },
-    "icon": "graphviz-logo.png"
+    "markdown.markdownItPlugins": true
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "typescript": "^3.5.2",
+    "vscode": "^1.1.35"
+  },
+  "dependencies": {
+    "viz.js": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geeklearningio/graphviz-markdown-preview.git"
+  },
+  "icon": "graphviz-logo.png"
 }
